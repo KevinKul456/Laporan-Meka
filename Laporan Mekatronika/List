@@ -1,0 +1,23 @@
+<html>
+    <title>
+        list
+    </title>
+    <body>
+        <h1>
+            The Three Hierarchy
+        </h1>
+    </body>
+    <ol>
+        <style>
+            ol { list-style:circle; /* menghilangkan bullet default */}
+        </style>
+
+        <li>Alpha</li>
+        <li>Sigma</li>
+        <li>Beta</li>
+      </ol> 
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/mHZRFs-faX8?si=IyDYJPG3A2yw37fH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      &Diamond; &hearts;
+      <body style="background-color: black; color:white"><h1>Selamat Datang Dunia HTML!</h1>
+        <p1>Im Lovin' it t&trade;</p1>
+      </body>

@@ -1,0 +1,351 @@
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #4287f5;
+            color: white;
+            padding: 15px 30px;
+            border: 4px solid #474747; 
+            border-radius: 8px;
+        }
+        
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-container img {
+            height: 50px; 
+            margin-right: 15px; 
+        }
+
+        .logo-container h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="Photos/Picture1.png" alt="Logo">
+            <h1>Laporan Akhir Project Mekatronika
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="LaporanMekaHome.html">Home</a></li>
+                <li><a href="LaporanMekaBab1.html">Bab 1</a></li>
+                <li><a href="LaporanMekaBab2.html">Bab 2</a></li>
+                <li><a href="LaporanMekaBab3.html">Bab 3</a></li>
+                <li><a href="LaporanMekaBab4.html">Bab 4</a></li>
+                <li><a href="LaporanMekaBab5.html">Bab 5</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+    <h1 align="center">
+        BAB IV DATA DAN PEMBAHASAN 
+    </h1>
+    <h2>
+        4.1 Analisa
+    </h2>
+    <h3>
+        4.1.1 Gambar Rangkaian Elektronika
+    </h3>
+    <img src="Photos/pic 1.jpg" width="500">
+    <img src="Photos/Pic 2.jpg" width="500">
+    <br>
+    <h3>
+        4.1.2 Rangkaian
+    </h3> 
+    <h4>
+        PIR Sensor:
+    </h4>
+    <ul>
+        <li>
+            VCC >> Arus +
+        </li>
+        <li>
+            OUT >> Resistor 330 Ohm
+        </li>
+        <li>
+            GND >> Arus -
+        </li>
+    </ul>
+    <h4>
+        IC LM358:
+    </h4>
+    <ul>
+        <li>
+            Pin 1 >> Arus -
+        </li>
+        <li>
+            Pin 2 >> Pin 6 IC LM358, kaki katoda LED(1), dan kaki kolektor BC547
+        </li>
+        <li>
+            Pin 3 >> Kaki - Buzzer dan kaki katoda LED(2)
+        </li>
+        <li>
+            Pin 4 >> Pin 8 IC LM358 dan Arus +
+        </li>
+        <li>
+            Pin 5 >> \
+        </li>
+        <li>
+            Pin 6 >> Pin 2 IC LM358
+        </li>
+        <li>
+            Pin 7 >> \
+        </li>
+        <li>
+            Pin 8 >> Pin 4 IC LM358 dan Arus +
+        </li>
+    </ul>
+    <h4>
+        LED(1):
+    </h4>
+    <ul>
+        <li>
+            Anoda >> Resistor 100 Ohm ke Arus +
+        </li>
+        <li>
+            Katoda >> Pin 2 IC LM358
+        </li>
+    </ul>
+    <h4>
+        LED(2):
+    </h4>
+    <ul>
+        <li>
+            Anoda >> Resistor 470 Ohm ke Arus +
+        </li>
+        <li>
+            Katoda >> Pin 3 IC LM358
+        </li>
+    </ul>
+    <h4>
+        Transistor BC547:
+    </h4>
+    <ul>
+        <li>
+            Kolektor >> Kaki katoda LED(1), dan kaki pin 2 IC LM358
+        </li>
+        <li>
+            Basis >> Resistor 330 Ohm ke GND PIR HC-SR501
+        </li>
+        <li>
+            Emitor >> Arus -
+        </li>
+    </ul>
+    <h4>
+        Buzzer:
+    </h4>
+    <ul>
+        <li>
+            Positif >> Resistor 470 Ohm ke Arus +
+        </li>
+        <li>
+            Negatif >> Pin 3 IC LM358
+        </li>
+    </ul>
+    <h4>
+        Resistor 330 Ohm:
+    </h4>
+    <ul>
+        <li>
+            Salah satu kaki >> Kaki basis transistor BC547
+        </li>
+        <li>
+            Salah satu kaki >> Kaki GND PIR HC-SR501
+        </li>
+    </ul>
+    <h4>
+        Resistor 100 Ohm:
+    </h4>
+    <ul>
+        <li>
+            Salah satu kaki >> Arus +
+        </li>
+        <li>
+            Salah satu kaki >> Kaki Anoda LED(1)
+        </li>
+    </ul>
+    <h4>
+        Resistor 470 Ohm:
+    </h4>
+    <ul>
+        <li>
+            Salah satu kaki >> Arus +
+        </li>
+        <li>
+            Salah satu kaki >> Kaki anoda LED(2) dan kaki positif buzzer
+        </li>
+    </ul>
+    <br>
+    <h2>4.2 Hasil</h2>
+    <h3>
+        4.2.1 Hasil yang didapatkan (Timeline)
+    </h3>
+    <table border="1" cellpadding="5" cellspacing="0" align="center">
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Tanggal</th>
+                <th>Berhasil / Gagal</th>
+                <th>Hasil Yang Didapatkan</th>
+                <th>Kesalahan</th>
+                <th>Pembetulan</th>
+            </tr>
+        </thead>
+        <tbody align="center">
+            <tr>
+                <td>1.</td>
+                <td>28 Agustus 2024</td>
+                <td>-</td>
+                <td>Membeli barang-barang yang diperlukan</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>18 September 2024</td>
+                <td>-</td>
+                <td>Mulai membuat rangkaian</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>            
+            <tr>
+                <td>3.</td>
+                <td>25 September 2024</td>
+                <td>Gagal</td>
+                <td>Rangkaian PIR HC-SR501 tidak resposif</td>
+                <td>-</td>
+                <td>Mengatur sensifitas sensor PIR</td>
+            </tr>            
+            <tr>
+                <td>4.</td>
+                <td>30 oktober 2024</td>
+                <td>Berhasil</td>
+                <td>Rangkaian Pir dan Flip-Flop sudah bisa bekerja</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>            
+            <tr>
+                <td>5.</td>
+                <td>29 November 2024</td>
+                <td>Berhasil</td>
+                <td>Sudah menguji rangkaian di Pak Franky</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>6.</td>
+                <td>12 Januari 2025</td>
+                <td>-</td>
+                <td>Membeli Alfaboard</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>7.</td>
+                <td>13 Januari 2025</td>
+                <td>-</td>
+                <td>Mulai membuat maket</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>8.</td>
+                <td>17 Febuari 2025</td>
+                <td>Berhasi</td>
+                <td>Maket dan rangkaian sudah jadi dan siap untuk dipresentasikan.</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>9.</td>
+                <td>24 Febuari 2025</td>
+                <td>Berhasil</td>
+                <td>Mempresentasikan rangkaian kepada guru</td>
+                <td>-</td>
+                <td>Perbaikan dan masukan dari guru-guru</td>
+            </tr>
+            <tr>
+                <td>10.</td>
+                <td>3 Maret 2025</td>
+                <td>Berhasil</td>
+                <td>Memperbaiki rangkaian dan mempresentasikan ulang</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+        </table>
+        <br>
+        <h2>
+            4.2.2 Hasil Percobaan
+        </h2>
+<p>PIR HC-SR501: Percobaan pertama LED tidak menyala dan PIR kurang responsif. Percobaan kedua rangkaian sudah bisa bekerja tetapi PIR masih kuraing resposif. Percobaan ketiga rangkaian sudah bisa bekerja.</p>
+<p>
+    Flip-Flop: Percobaan pertama sudah bisa bekerja dengan baik, tetapi tidak bisa di sambungkan bersama sensor PIR, jadi harus diganti. Percobaan kedua Flip-Flop sudah diganti dan bisa bekerja.
+</p>
+<br>
+<h2>
+    4.3	Kelebihan dan Kekurangan Alat
+</h2>
+<h4>
+    PIR HC-SR501
+</h4>
+<ul>
+    <li>
+        Kelebihan: Bisa mendeteksi objek dengan baik.
+    </li>
+    <li>
+        Kekurangan: Adanya delay
+    </li>
+</ul>
+<h4>
+    Flip-Flop
+</h4>
+<ul>
+    <li>
+        Kelebihan: Bagus untuk memberitahu
+    </li>
+    <li>
+        Kekurangan: Harus dapat dilihat
+    </li>
+</ul>
+<br>
+<h2>
+    4.4	Evaluasi diri
+</h2>
+<p>
+    Saya merasa lega rangkaian saya sudah jadi, walaupun banyak kegagalan dan kekurangan.Dengan project akhir ini saya bisa belajar banyak hal, seperti kesabaran dan ketelitian saat mengerjakan project ini. Saya juga belajar mengatur waktu dengan ujian praktik lain.
+</p>
+</html>
